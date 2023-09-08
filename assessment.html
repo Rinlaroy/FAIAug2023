@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/mainstyle.css">
+    <script src="../CSS/js/js/assessment.js"></script>
+</head>
+<body>
+    <h2>Navayoga Infrastructure Toll Plaza Software</h2>
+    <form id="entryForm"></form>
+    <label for="ownerName">Vehicle Owner Name :</label>
+    <input type="text" id="ownerName" required> </br></br>
+    <label for="regNumber"> Registration Number : </label>
+    
+    <input type="text"  id="regNumber" required></br></br>
+    <label for="category">Category  :</label>
+          <select   id="category">
+            <option value="bikes">Bikes</option>
+            <option value="lmv">LMV</option>
+            <option value="hmv">HMV</option>
+            <option value="heavyTrucks">Heavy Trucks</option>
+            </select></br></br>
+        <button type="button" onclick="calculateToll()">Calculate Toll</button>
+        <p id="result"></p>
+        </form>
+
+        <!--Statistics-->
+        <p>Total Amount Collected for Each Category :</p>
+        <ul id="statistics"></ul>
+        <button type="button" onclick="updateStatistics()">Statistics</button>
+
+
+        <!--Search-->
+        <h2>Search</h2>
+        <label for ="searchCategory">Category : </label>
+        <select id="searchCategory">
+            <option value="">All</option>
+            <option value="bikes">Bikes</option>
+            <option value="hmv">HMV</option>
+            <option value="lmv">LMV</option>
+            <option value="heavyTrucks">Heavy Trucks</option>
+        </select>
+        <label for="searchRegNumber"> Registration Number :</label>
+        <input type="text" id="searchRegNumber">
+        <button type="button" onclick="filterVehicles()">Search</button>
+
+        <!--DisplayFilteredVehicles-->
+        <h3>Filtered vehicles</h3>
+        <ul id = "filteredVehicles"></ul>
+    
+    
+</body>
+</html>
