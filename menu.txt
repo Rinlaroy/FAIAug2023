@@ -1,0 +1,6 @@
+﻿"--------------Product Menu-----------------
+"To Add New Product -------Press A
+"To Update New Product-----Press U
+"To Delete a Product------Press DEL
+ "For Display all Products----Press D
+ "-------Exit----------------Press E"
